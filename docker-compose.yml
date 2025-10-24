@@ -1,0 +1,9 @@
+version: '3'
+services:
+  aeiou:
+    build: .
+    command: ./setup_aeiou.sh
+    volumes:
+      - .:/app
+    ports:
+      - "3000:3000"
